@@ -1,7 +1,7 @@
 ﻿
 namespace e_quiz
 {
-    partial class Form2
+    partial class RegisterPage
     {
         /// <summary>
         /// Required designer variable.

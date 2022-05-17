@@ -11,11 +11,11 @@ using System.Data.SqlClient;
 
 namespace e_quiz
 {
-    public partial class RegistirationPage : Form
+    public partial class LoginPage: Form
     {
         IAuthLogic authLogic = new AuthLogic();
 
-        public RegistirationPage()
+        public LoginPage()
         {
             InitializeComponent();
         }

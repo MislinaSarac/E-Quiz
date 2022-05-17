@@ -17,7 +17,7 @@ namespace e_quiz
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new RegistirationPage());
+            Application.Run(new RegisterPage());
         }
     }
 }

@@ -23,9 +23,29 @@ namespace e_quiz
             return result;
         }
 
-        public bool register(string Username, string Password, UserTypeEnum userType)
+        public bool register(string username, string password, UserTypeEnum userType)
         {
-            throw new NotImplementedException();
+            con.Open();
+            string commandText = "INSERT INTO Users VALUES (@username,@password,@type)";
+            SqlCommand command = new SqlCommand(commandText, con);
+            command.Parameters.AddWithValue("@username", username);
+            command.Parameters.AddWithValue("@password", password);
+            command.Parameters.AddWithValue("@type", (int)userType);
+            bool result = false;
+            try
+            {
+                command.ExecuteNonQuery();
+                result = true;
+
+            }
+            catch (Exception e)
+            {
+                result = false;
+            }
+            
+           
+            con.Close();
+            return result;
         }
     }
 }
