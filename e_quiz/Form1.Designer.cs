@@ -86,6 +86,7 @@ namespace e_quiz
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(257, 44);
             this.txtPassword.TabIndex = 4;
+            this.txtPassword.Visible = false;
             // 
             // radioButton1
             // 
@@ -103,19 +104,20 @@ namespace e_quiz
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Forte", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.radioButton2.Location = new System.Drawing.Point(275, 294);
+            this.radioButton2.Location = new System.Drawing.Point(508, 294);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(108, 29);
             this.radioButton2.TabIndex = 8;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Student";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Forte", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.radioButton3.Location = new System.Drawing.Point(445, 294);
+            this.radioButton3.Location = new System.Drawing.Point(301, 294);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(125, 29);
             this.radioButton3.TabIndex = 9;
@@ -133,7 +135,7 @@ namespace e_quiz
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // RegistirationPage
+            // LoginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -150,8 +152,8 @@ namespace e_quiz
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Forte", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.Name = "RegistirationPage";
-            this.Text = "Registiration Page";
+            this.Name = "LoginPage";
+            this.Text = "Login Page ";
             this.ResumeLayout(false);
             this.PerformLayout();
 

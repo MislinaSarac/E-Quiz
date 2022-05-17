@@ -26,11 +26,11 @@ namespace e_quiz
             bool result = authLogic.login(txtUsername.Text, txtPassword.Text, typeEnum);
             if (result)
             {
-                MessageBox.Show("BAŞARILI");
+                MessageBox.Show("LOGIN SUCCESSFUL");
             }
             else
             {
-                MessageBox.Show("BAŞARISIZ");
+                MessageBox.Show("LOGIN FAILED");
             }
         }
 
@@ -42,11 +42,18 @@ namespace e_quiz
             }
             else if (radioButton2.Checked)
             {
-                return UserTypeEnum.EXAMER;
+                return UserTypeEnum.EXAMİNER;
             }else
             {
                 return UserTypeEnum.STUDENT;
             }
         }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+     
     }
 }

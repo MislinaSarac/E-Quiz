@@ -6,6 +6,6 @@ namespace e_quiz
 {
     enum UserTypeEnum
     {
-        ADMIN, EXAMER, STUDENT
+        ADMIN, STUDENT, EXAMİNER
     }
 }
