@@ -153,6 +153,7 @@ namespace e_quiz
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "LoginPage";
             this.Text = "Login Page ";
+            this.Load += new System.EventHandler(this.LoginPage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

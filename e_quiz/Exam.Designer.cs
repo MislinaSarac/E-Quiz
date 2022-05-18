@@ -31,6 +31,7 @@ namespace e_quiz
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Exam));
             this.btnBack = new System.Windows.Forms.Button();
+            this.btnStart = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -45,6 +46,17 @@ namespace e_quiz
             this.btnBack.TabIndex = 9;
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // btnStart
+            // 
+            this.btnStart.Font = new System.Drawing.Font("Forte", 18.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnStart.Location = new System.Drawing.Point(140, 146);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(195, 172);
+            this.btnStart.TabIndex = 13;
+            this.btnStart.Text = "Start the Exam";
+            this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // label2
             // 
@@ -61,7 +73,8 @@ namespace e_quiz
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGreen;
-            this.ClientSize = new System.Drawing.Size(676, 474);
+            this.ClientSize = new System.Drawing.Size(489, 466);
+            this.Controls.Add(this.btnStart);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnBack);
             this.Font = new System.Drawing.Font("Forte", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -76,6 +89,7 @@ namespace e_quiz
         #endregion
 
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Label label2;
     }
 }

@@ -22,29 +22,9 @@ namespace e_quiz
             LoginPage loginPage = new LoginPage();
             loginPage.Show();
             this.Hide();
-
-            UserTypeEnum userTypeEnum = getUserType();
-            bool result = authLogic.register(txtUsername.Text,txtPassword.Text, userTypeEnum);
-           
-
         }
 
-        private UserTypeEnum getUserType()
-        {
-            if (radioButton1.Checked)
-            {
-                return UserTypeEnum.ADMIN;
-            }
-            else if (radioButton2.Checked)
-            {
-                return UserTypeEnum.EXAMİNER;
-            }
-            else
-            {
-                return UserTypeEnum.STUDENT;
-            }
-        }
-
+      
         private void RegisterPage_Load(object sender, EventArgs e)
         {
 

@@ -23,7 +23,13 @@ namespace e_quiz
             this.Close();
         }
 
-      
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ExamStart examStart = new ExamStart();
+            examStart.ShowDialog();
+            this.Close();
+        }
     }
     }
 

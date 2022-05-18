@@ -58,6 +58,9 @@ namespace e_quiz
             }
         }
 
+        private void LoginPage_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }
