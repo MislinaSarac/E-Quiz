@@ -29,9 +29,14 @@ namespace e_quiz
                 this.Hide();
                 this.Close();
             }
+            else if (radioButton2.Checked)
+            {
+                Exam exam  = new Exam();
+                exam.Show();
+                this.Hide();
+                this.Close();
+            }
 
-          
-           
 
             UserTypeEnum typeEnum = getUserType();
             bool result = authLogic.login(txtUsername.Text, txtPassword.Text, typeEnum);
@@ -53,14 +58,6 @@ namespace e_quiz
             }
         }
 
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void LoginPage_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

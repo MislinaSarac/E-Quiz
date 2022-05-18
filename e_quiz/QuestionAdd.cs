@@ -39,12 +39,10 @@ namespace e_quiz
             command.Parameters.AddWithValue("@ansverB", radioBtnB.Text);
             command.Parameters.AddWithValue("@ansverc",radioBtnC.Text);
             command.Parameters.AddWithValue("@ansverD",radioBtnD.Text);
+
             MemoryStream memoryStream = new MemoryStream();
+            command.Parameters.AddWithValue("@image", (Byte[])memoryStream.ToArray());
 
-            pictureBox1.Image.Save(memoryStream, pictureBox1.Image.RawFormat);
-            var falan = memoryStream.ToArray();
-
-            command.Parameters.AddWithValue("@image",(Byte[])memoryStream.ToArray()); 
 
             if (radioBtnA.Checked)
             {
@@ -69,13 +67,21 @@ namespace e_quiz
         private void button1_Click(object sender, EventArgs e)
         {
             addquestion();
-           /* questions questions = new questions();
-            questions.qustiontest = questiontxt.Text;
-            questions.ansverA = radioBtnA.Text;
-            questions.ansverB = radioBtnB.Text;
-            questions.ansverC = radioBtnC.Text;
-            questions.ansverD = radioBtnD.Text;
-           // questions.image=*/
+            /* questions questions = new questions();
+             questions.qustiontest = questiontxt.Text;
+             questions.ansverA = radioBtnA.Text;
+             questions.ansverB = radioBtnB.Text;
+             questions.ansverC = radioBtnC.Text;
+             questions.ansverD = radioBtnD.Text;
+            // questions.image=*/
+
+            MemoryStream memoryStream = new MemoryStream();
+
+            pictureBox1.Image.Save(memoryStream, pictureBox1.Image.RawFormat);
+            var falan = memoryStream.ToArray();
+
+           
+
         }
 
         private void button2_Click(object sender, EventArgs e)

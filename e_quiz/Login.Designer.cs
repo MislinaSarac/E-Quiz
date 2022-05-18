@@ -111,7 +111,6 @@ namespace e_quiz
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Student";
             this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioButton3
             // 
@@ -154,7 +153,6 @@ namespace e_quiz
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "LoginPage";
             this.Text = "Login Page ";
-            this.Load += new System.EventHandler(this.LoginPage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
