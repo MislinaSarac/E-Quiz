@@ -22,16 +22,20 @@ namespace e_quiz
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            if (radioButton3.Checked)
+            {
+                QuestionAdd questionAdd = new QuestionAdd();
+                questionAdd.Show();
+                this.Hide();
+                this.Close();
+            }
+
+          
+           
+
             UserTypeEnum typeEnum = getUserType();
             bool result = authLogic.login(txtUsername.Text, txtPassword.Text, typeEnum);
-            if (result)
-            {
-                MessageBox.Show("LOGIN SUCCESSFUL");
-            }
-            else
-            {
-                MessageBox.Show("LOGIN FAILED");
-            }
+           
         }
 
         private UserTypeEnum getUserType()
@@ -54,6 +58,9 @@ namespace e_quiz
 
         }
 
-     
+        private void LoginPage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

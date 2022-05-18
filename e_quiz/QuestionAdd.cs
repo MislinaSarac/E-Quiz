@@ -87,8 +87,17 @@ namespace e_quiz
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 pictureBox1.Image = Image.FromFile(openFileDialog1.FileName);
+
             }
 
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginPage loginPage = new LoginPage();
+            loginPage.ShowDialog();
+            this.Close();
         }
     }
 }

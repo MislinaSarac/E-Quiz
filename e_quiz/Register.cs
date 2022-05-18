@@ -18,16 +18,15 @@ namespace e_quiz
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+
+            LoginPage loginPage = new LoginPage();
+            loginPage.Show();
+            this.Hide();
+
             UserTypeEnum userTypeEnum = getUserType();
             bool result = authLogic.register(txtUsername.Text,txtPassword.Text, userTypeEnum);
-            if (result)
-            {
-                MessageBox.Show("LOGIN SUCCESSFUL");
-            }
-            else
-            {
-                MessageBox.Show("LOGİN FAILED ");
-            }
+           
+
         }
 
         private UserTypeEnum getUserType()
