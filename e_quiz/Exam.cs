@@ -22,6 +22,8 @@ namespace e_quiz
             loginPage.ShowDialog();
             this.Close();
         }
+
+      
     }
     }
 
