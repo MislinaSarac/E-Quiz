@@ -31,7 +31,6 @@ namespace e_quiz
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuestionAdd));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.questiontxt = new System.Windows.Forms.RichTextBox();
             this.radioBtnA = new System.Windows.Forms.RadioButton();
             this.radioBtnB = new System.Windows.Forms.RadioButton();
             this.radioBtnC = new System.Windows.Forms.RadioButton();
@@ -39,8 +38,8 @@ namespace e_quiz
             this.btnSave = new System.Windows.Forms.Button();
             this.btnChoose = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.questiontxt = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,72 +49,63 @@ namespace e_quiz
             this.pictureBox1.Location = new System.Drawing.Point(132, 129);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(486, 248);
+            this.pictureBox1.Size = new System.Drawing.Size(749, 500);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // questiontxt
-            // 
-            this.questiontxt.Location = new System.Drawing.Point(132, 435);
-            this.questiontxt.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.questiontxt.Name = "questiontxt";
-            this.questiontxt.Size = new System.Drawing.Size(498, 90);
-            this.questiontxt.TabIndex = 1;
-            this.questiontxt.Text = "";
             // 
             // radioBtnA
             // 
             this.radioBtnA.AutoSize = true;
-            this.radioBtnA.Location = new System.Drawing.Point(132, 562);
+            this.radioBtnA.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioBtnA.Location = new System.Drawing.Point(307, 693);
             this.radioBtnA.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.radioBtnA.Name = "radioBtnA";
             this.radioBtnA.Size = new System.Drawing.Size(64, 35);
             this.radioBtnA.TabIndex = 2;
-            this.radioBtnA.TabStop = true;
             this.radioBtnA.Text = "A)";
             this.radioBtnA.UseVisualStyleBackColor = true;
             // 
             // radioBtnB
             // 
             this.radioBtnB.AutoSize = true;
-            this.radioBtnB.Location = new System.Drawing.Point(129, 621);
+            this.radioBtnB.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioBtnB.Location = new System.Drawing.Point(420, 693);
             this.radioBtnB.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.radioBtnB.Name = "radioBtnB";
             this.radioBtnB.Size = new System.Drawing.Size(62, 35);
             this.radioBtnB.TabIndex = 3;
-            this.radioBtnB.TabStop = true;
             this.radioBtnB.Text = "B)";
             this.radioBtnB.UseVisualStyleBackColor = true;
             // 
             // radioBtnC
             // 
             this.radioBtnC.AutoSize = true;
-            this.radioBtnC.Location = new System.Drawing.Point(127, 676);
+            this.radioBtnC.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioBtnC.Location = new System.Drawing.Point(527, 693);
             this.radioBtnC.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.radioBtnC.Name = "radioBtnC";
             this.radioBtnC.Size = new System.Drawing.Size(61, 35);
             this.radioBtnC.TabIndex = 4;
-            this.radioBtnC.TabStop = true;
             this.radioBtnC.Text = "C)";
             this.radioBtnC.UseVisualStyleBackColor = true;
             // 
             // radioBtnD
             // 
             this.radioBtnD.AutoSize = true;
-            this.radioBtnD.Location = new System.Drawing.Point(127, 731);
+            this.radioBtnD.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioBtnD.Location = new System.Drawing.Point(636, 693);
             this.radioBtnD.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.radioBtnD.Name = "radioBtnD";
             this.radioBtnD.Size = new System.Drawing.Size(63, 35);
             this.radioBtnD.TabIndex = 5;
-            this.radioBtnD.TabStop = true;
             this.radioBtnD.Text = "D)";
             this.radioBtnD.UseVisualStyleBackColor = true;
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(642, 713);
+            this.btnSave.Location = new System.Drawing.Point(912, 693);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(247, 53);
+            this.btnSave.Size = new System.Drawing.Size(247, 51);
             this.btnSave.TabIndex = 6;
             this.btnSave.Text = "Save Question";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -123,7 +113,7 @@ namespace e_quiz
             // 
             // btnChoose
             // 
-            this.btnChoose.Location = new System.Drawing.Point(642, 327);
+            this.btnChoose.Location = new System.Drawing.Point(912, 563);
             this.btnChoose.Name = "btnChoose";
             this.btnChoose.Size = new System.Drawing.Size(247, 50);
             this.btnChoose.TabIndex = 7;
@@ -143,15 +133,6 @@ namespace e_quiz
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(132, 400);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 31);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Question:";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -162,14 +143,22 @@ namespace e_quiz
             this.label2.TabIndex = 10;
             this.label2.Text = "Add Question";
             // 
+            // questiontxt
+            // 
+            this.questiontxt.Location = new System.Drawing.Point(1120, 12);
+            this.questiontxt.Name = "questiontxt";
+            this.questiontxt.Size = new System.Drawing.Size(50, 44);
+            this.questiontxt.TabIndex = 11;
+            this.questiontxt.Visible = false;
+            // 
             // QuestionAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGreen;
-            this.ClientSize = new System.Drawing.Size(1116, 789);
+            this.ClientSize = new System.Drawing.Size(1182, 789);
+            this.Controls.Add(this.questiontxt);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnChoose);
             this.Controls.Add(this.btnSave);
@@ -177,7 +166,6 @@ namespace e_quiz
             this.Controls.Add(this.radioBtnC);
             this.Controls.Add(this.radioBtnB);
             this.Controls.Add(this.radioBtnA);
-            this.Controls.Add(this.questiontxt);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Forte", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
@@ -193,7 +181,6 @@ namespace e_quiz
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.RichTextBox questiontxt;
         private System.Windows.Forms.RadioButton radioBtnA;
         private System.Windows.Forms.RadioButton radioBtnB;
         private System.Windows.Forms.RadioButton radioBtnC;
@@ -201,7 +188,7 @@ namespace e_quiz
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnChoose;
         private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox questiontxt;
     }
 }

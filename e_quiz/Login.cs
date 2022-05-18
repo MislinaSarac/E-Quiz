@@ -36,6 +36,13 @@ namespace e_quiz
                 this.Hide();
                 this.Close();
             }
+            else
+            {
+                Executive executive = new Executive();
+                executive.Show();
+                this.Hide();
+                this.Close();
+            }
 
 
             UserTypeEnum typeEnum = getUserType();

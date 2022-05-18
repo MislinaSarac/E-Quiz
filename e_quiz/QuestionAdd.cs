@@ -78,9 +78,9 @@ namespace e_quiz
             MemoryStream memoryStream = new MemoryStream();
 
             pictureBox1.Image.Save(memoryStream, pictureBox1.Image.RawFormat);
-            var falan = memoryStream.ToArray();
+            _ = memoryStream.ToArray();
 
-           
+
 
         }
 
@@ -105,5 +105,7 @@ namespace e_quiz
             loginPage.ShowDialog();
             this.Close();
         }
+
+
     }
 }
