@@ -82,11 +82,11 @@ namespace e_quiz
             // txtPassword
             // 
             this.txtPassword.BackColor = System.Drawing.Color.DarkGreen;
-            this.txtPassword.Location = new System.Drawing.Point(270, 219);
+            this.txtPassword.Location = new System.Drawing.Point(270, 218);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = 'x';
             this.txtPassword.Size = new System.Drawing.Size(257, 44);
             this.txtPassword.TabIndex = 4;
-            this.txtPassword.Visible = false;
             // 
             // radioButton1
             // 

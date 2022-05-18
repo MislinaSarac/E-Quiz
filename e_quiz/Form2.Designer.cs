@@ -98,9 +98,9 @@ namespace e_quiz
             this.txtConfrimPassword.Location = new System.Drawing.Point(287, 354);
             this.txtConfrimPassword.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.txtConfrimPassword.Name = "txtConfrimPassword";
+            this.txtConfrimPassword.PasswordChar = 'x';
             this.txtConfrimPassword.Size = new System.Drawing.Size(268, 44);
             this.txtConfrimPassword.TabIndex = 17;
-            this.txtConfrimPassword.Visible = false;
             // 
             // label4
             // 
@@ -118,9 +118,10 @@ namespace e_quiz
             this.txtPassword.Location = new System.Drawing.Point(287, 251);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = 'x';
             this.txtPassword.Size = new System.Drawing.Size(268, 44);
             this.txtPassword.TabIndex = 15;
-            this.txtPassword.Visible = false;
+            this.txtPassword.UseWaitCursor = true;
             // 
             // txtUsername
             // 
@@ -155,7 +156,7 @@ namespace e_quiz
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Forte", 34.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(258, 24);
+            this.label1.Location = new System.Drawing.Point(253, 22);
             this.label1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(194, 63);
@@ -167,7 +168,7 @@ namespace e_quiz
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGreen;
-            this.ClientSize = new System.Drawing.Size(749, 702);
+            this.ClientSize = new System.Drawing.Size(739, 685);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton2);
