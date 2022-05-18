@@ -39,14 +39,15 @@ namespace e_quiz
             this.btnChoose = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.questiontxt = new System.Windows.Forms.TextBox();
+            this.questiontxt = new System.Windows.Forms.RichTextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(132, 129);
+            this.pictureBox1.Location = new System.Drawing.Point(132, 124);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(749, 500);
@@ -57,7 +58,7 @@ namespace e_quiz
             // 
             this.radioBtnA.AutoSize = true;
             this.radioBtnA.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.radioBtnA.Location = new System.Drawing.Point(307, 693);
+            this.radioBtnA.Location = new System.Drawing.Point(282, 863);
             this.radioBtnA.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.radioBtnA.Name = "radioBtnA";
             this.radioBtnA.Size = new System.Drawing.Size(64, 35);
@@ -69,7 +70,7 @@ namespace e_quiz
             // 
             this.radioBtnB.AutoSize = true;
             this.radioBtnB.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.radioBtnB.Location = new System.Drawing.Point(420, 693);
+            this.radioBtnB.Location = new System.Drawing.Point(395, 863);
             this.radioBtnB.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.radioBtnB.Name = "radioBtnB";
             this.radioBtnB.Size = new System.Drawing.Size(62, 35);
@@ -81,7 +82,7 @@ namespace e_quiz
             // 
             this.radioBtnC.AutoSize = true;
             this.radioBtnC.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.radioBtnC.Location = new System.Drawing.Point(527, 693);
+            this.radioBtnC.Location = new System.Drawing.Point(502, 863);
             this.radioBtnC.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.radioBtnC.Name = "radioBtnC";
             this.radioBtnC.Size = new System.Drawing.Size(61, 35);
@@ -93,7 +94,7 @@ namespace e_quiz
             // 
             this.radioBtnD.AutoSize = true;
             this.radioBtnD.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.radioBtnD.Location = new System.Drawing.Point(636, 693);
+            this.radioBtnD.Location = new System.Drawing.Point(611, 863);
             this.radioBtnD.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.radioBtnD.Name = "radioBtnD";
             this.radioBtnD.Size = new System.Drawing.Size(63, 35);
@@ -103,7 +104,7 @@ namespace e_quiz
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(912, 693);
+            this.btnSave.Location = new System.Drawing.Point(912, 847);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(247, 51);
             this.btnSave.TabIndex = 6;
@@ -145,18 +146,28 @@ namespace e_quiz
             // 
             // questiontxt
             // 
-            this.questiontxt.Location = new System.Drawing.Point(1120, 12);
+            this.questiontxt.Location = new System.Drawing.Point(129, 702);
             this.questiontxt.Name = "questiontxt";
-            this.questiontxt.Size = new System.Drawing.Size(50, 44);
+            this.questiontxt.Size = new System.Drawing.Size(752, 120);
             this.questiontxt.TabIndex = 11;
-            this.questiontxt.Visible = false;
+            this.questiontxt.Text = "";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(132, 656);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(127, 31);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Question:";
             // 
             // QuestionAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGreen;
-            this.ClientSize = new System.Drawing.Size(1182, 789);
+            this.ClientSize = new System.Drawing.Size(1260, 936);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.questiontxt);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnBack);
@@ -189,6 +200,7 @@ namespace e_quiz
         private System.Windows.Forms.Button btnChoose;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox questiontxt;
+        private System.Windows.Forms.RichTextBox questiontxt;
+        private System.Windows.Forms.Label label1;
     }
 }
